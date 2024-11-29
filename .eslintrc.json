@@ -1,3 +1,21 @@
+
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    // Custom rules
+    "react/no-unescaped-entities": "off", // Unescaped entities par warning
+    "@typescript-eslint/no-unused-vars": "off", //
+    "react/jsx-uses-react": "off", // React 17+ ke liye zaroorat nahi
+    "react/react-in-jsx-scope": "off" // React 17+ ke liye zaroorat nahi
+    
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // React version ko automatically detect karega
+    }
+  }
 }
